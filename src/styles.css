@@ -1,0 +1,157 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  margin-top: 0;
+}
+.navbar-nav {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+
+  margin-top: 0;
+  height: 60px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.navbar-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-nav a:hover {
+  font-size: 22px;
+  transition: font-size 0.3s ease-in-out;
+}
+.navbar-nav li {
+  margin: 0 10px;
+}
+.shop-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+}
+
+.product img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.product h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.product p {
+  margin: 0;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product span {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.product button {
+  padding: 10px 20px;
+  background-color: #ff416c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  width: 150px;
+  height: 50px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.product button:hover {
+  background-color: #ff4b2b;
+}
+
+.product-cart span {
+  white-space: nowrap;
+  font-size: 16px;
+}
+.counter-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  padding: 0 10px;
+  width: 150px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+}
+
+.counter-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #333;
+  vertical-align: middle;
+  box-sizing: border-box;
+  line-height: 40px; /* Same as the height of the .counter-button div */
+}
+
+.counter-button button:hover {
+  color: white;
+  background-color: #e5e5e5;
+}
+
+.count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+}
